@@ -7,11 +7,29 @@
         
         
     <style>
-        body {
+        body
+        
+       <div>
+        
+        div {
+            padding: 25px;
+            margin: 25px;
+            
+                }
+        div#bio {
+            background: #dddddd;
+        }
+        
+        </div>
+        
+        
+        </style>
+        
+        <style>
+        {
           font-family: Arial, Helvetica, sans-serif;
           font-size: 20px;
         }
-
         #myBtn {
           display: none;
           position: fixed;
@@ -27,7 +45,6 @@
           padding: 15px;
           border-radius: 4px;
         }
-
         #myBtn:hover {
           background-color: #555;
         }
@@ -39,13 +56,11 @@
             border-collapse: collapse;
             width: 100%;
         }
-
         td, th {
             border: 1px solid #dddddd;
             text-align: left;
             padding: 5px;
         }
-
         tr:nth-child(even) {
             background-color: #dddddd;
         }
@@ -56,7 +71,6 @@
             * {
                 box-sizing: border-box;
             }
-
             input[type=text], select, textarea {
                 width: 100%;
                 padding: 12px;
@@ -64,12 +78,10 @@
                 border-radius: 4px;
                 resize: vertical;
             }
-
             label {
                 padding: 12px 12px 12px 0;
                 display: inline-block;
             }
-
             input[type=submit] {
                 background-color: #4CAF50;
                 color: white;
@@ -79,29 +91,24 @@
                 cursor: pointer;
                 float: right;
             }
-
             input[type=submit]:hover {
                 background-color: #45a049;
             }
-
             .container {
                 border-radius: 5px;
                 background-color: #f2f2f2;
                 padding: 20px;
             }
-
             .col-25 {
                 float: left;
                 width: 25%;
                 margin-top: 6px;
             }
-
             .col-75 {
                 float: left;
                 width: 75%;
                 margin-top: 6px;
             }
-
                 .row:after {
                 content: "";
                 display: table;
@@ -122,6 +129,9 @@
         }
     </style>
         
+        
+        
+        
     </head>
     <body>
         
@@ -130,14 +140,7 @@
         <img src="images/c0.jpg" alt="Avatar" style="width:200px">
         
         <br>
-          <!--
-        <a href="images/c1.jpg">
-            <img alt="Candace" src="images/c1.jpg" width="650" height="350" />
-        </a>
-        
-
-        <br>
-        -->
+       
         
      <table>
          <tr>
@@ -177,7 +180,7 @@
         
         
         
-        
+     <div id="bio"> 
         
         <h2>Biography</h2>
         
@@ -204,8 +207,8 @@
             Soldeau-El Tarter, Andorra.
 
         </p>
-        
-       
+    </div>   
+   
         
         <h3>How it started?</h3>
         <p>
@@ -222,7 +225,7 @@
             <b>Likes:</b> Reading, drawing, photography, biking and hiking.”
         </p>
         
-        
+        <a href="images/c1.jpg"> <img alt="Candace" src="images/c1.jpg" width="550" height="300" /> </a>
         
         
         <h3>Olympic Highlights</h3>
@@ -276,15 +279,18 @@
 
         <p>
         <i>
-            (FIS-Ski, n.d.) 
-            (Canadian Olympic Committee, n.d.)
+            <a href="#W1">(FIS-Ski, n.d.) </a> 
+        <p>           
+            <a href="#W1"> (Canadian Olympic Committee, n.d.)</a>
+        </p>
+            
         </i>
         </p>
     
         
     
          <a href="images/c2.jpg">
-            <img alt="Candace" src="images/c2.jpg" width="500" height="300" />
+            <img alt="Candace" src="images/c2.jpg" width="550" height="300" />
             
         </a>
     
@@ -350,7 +356,11 @@
         
 
         <ul>
-            <li><a href="https://www.facebook.com/candacecrawfordski/">Facebook</a></li>
+            
+            
+            
+            
+            <li><a href="https://www.facebook.com/candacecrawfordski/">Facebook</a></li>            
             <li><a href="https://twitter.com/ItsCandaceC">Twitter</a></li>
             <li><a href="https://www.instagram.com/candacecrawford/">Instagram</a></li>
             <li><a href="https://www.skiwithcandace.com/">Website</a></li>
@@ -358,7 +368,7 @@
         
             <br>
         
-            <h2>Works Cited</h2>    
+            <h2 id="W1"> Works Cited</h2>    
             <ul>
                 <li>Canadian Olympic Committee. (n.d.). Candace Crawford | Team Canada - Official 2018 Olympic Team Website. 
                     Retrieved Feb 27, 2018, from Team Canada - Official 2018 Olympic Team 
@@ -383,7 +393,6 @@
    
         
     window.onscroll = function() {scrollFunction()};
-
     function scrollFunction() {
         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
             document.getElementById("myBtn").style.display = "block";
@@ -391,7 +400,6 @@
             document.getElementById("myBtn").style.display = "none";
         }
     }
-
    
     function topFunction() {
         document.body.scrollTop = 0;
@@ -404,18 +412,3 @@
 
     </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
